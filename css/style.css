@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+main {
+    width: 100%;
+    min-height: 300px;
+    background-color: #ececec;
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.menu ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#tradicional,
+#smash,
+#super,
+#combo {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    border: 1px solid black;
+}
+
+.burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 40px 0;
+    width: 20%;
+}
+
+#tradicional .burger {
+    background-color: red;
+}
+
+#smash .burger {
+    background-color: blue;
+}
+
+#super .burger {
+    background-color: yellow;
+}
+
+#combo .burger {
+    background-color: green;
+}
+
+#smash,
+#super,
+#combo {
+    display: none;
+}
